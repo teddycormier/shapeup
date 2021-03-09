@@ -20,7 +20,8 @@ html {
 body {
     background-color: white;
     font-size: 100%;
-    width: 100%;
+    width: 95%;
+    height: 95%;
     max-width: 960px;
     margin: 0 auto;
     border: 5px solid steelblue;
@@ -34,10 +35,12 @@ header {
 
 header img {
     float: left;
+    width: 140px;
+    min-width: 70px;
 }
 
 h1 {
-    margin-left: 30px;
+    margin-left: .82em;
     margin-top: 30px;
 }
 
@@ -49,9 +52,39 @@ header h2 {
     margin-top: 15px;
 }
 
+/* Horizontal Navigation Bar - w3 float and block style */
 
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+  }
+  
+  #nav_menu ul li {
+    float: left;
+  }
+  
+  #nav_menu ul li a {
+    display: block;
+    color: navy;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 1.5em;
+    text-decoration: none;
+  }
+  
+  #nav_menu ul li a:hover {
+    background-color: steelblue;
+    color: white;
+  }
 
-/* Horizontal Navigation Bar */
+  #nav_menu #about {
+      float: right;
+  }
+
+/* Horizontal Navigation Bar - Inline NAV bar style 
 #nav_menu ul{
     list-style: none;
     padding-top: 8px;
@@ -75,11 +108,14 @@ header h2 {
 #nav_menu ul li a {
     text-decoration: none;
     font-weight: bold;
+    color: navy;
 }
 
 #nav_menu ul li a:hover, #nav_menu ul li a:focus {
     color: white;
 }
+*/
+
 /* closing of bar */
 
 
@@ -100,6 +136,7 @@ header h2 {
     background-color: lightblue;
     padding: .5em;
     border: 2px solid black;
+    color: navy;
 }
 
 #nav_list ul li a:hover{
@@ -122,7 +159,7 @@ main {
 }
 
 section p {
-    margin-left: 30px;
+    margin-left: 1.68em;
     margin-top: 12px;
     margin-bottom: 30px;
 
@@ -131,22 +168,26 @@ section p {
 section blockquote {
     font-size: 85%;
     color: navy;
-    margin-left: 70px;
-    margin-right: 50px;
+    margin-left: 3.92em;
+    margin-right: 2.8em;
     margin-bottom: 15px;
     border-left: 3px solid maroon;
-    padding-left: 5px;
+    padding-left: .28em;
     background-color: lightgray;
 }
 
 section h2 {
-    margin-left: 30px;
+    margin-left: 1.18em;
     margin-top: 40px;
     margin-bottom: 15px;
 }
 
+section h3 {
+    margin-left: 0em;
+}
+
 section a {
-    margin: 30px;
+    margin: 1.68em;
 }
 
 /* unvisited link */
@@ -181,15 +222,15 @@ aside a:hover {
 
 aside li {
     margin: 10px 0;
-    margin-left: 27px;
+    margin-left: 1.51em; 
     margin-bottom: 12px;
 }
 
 aside h2 {
-    margin-left: 10px;
+    margin-left: .3em;
     margin-bottom: 20px;
     color: maroon;
-    padding-left: 15px;
+    padding-left: .84em;
 }
 
 footer {
@@ -197,7 +238,7 @@ footer {
     text-align: center;
     background: steelblue;
     color: white;
-    padding: 25px;
+    padding: 1.4em;
     font-weight: bold;
     font-variant: small-caps;
     clear: both;
@@ -206,15 +247,33 @@ footer {
 .homesection {
     width: 64%;
     float: right;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: .84em;
+    padding-left: .84em;
 }
 
 .sidebar {
     width: 35%;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 1.12em;
+    padding-left: 1.12em;
     padding-top: 35px;
 }
 
+#mobilemenu {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .homesection {
+        float: none;
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+}
 
