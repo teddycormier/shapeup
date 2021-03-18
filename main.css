@@ -22,7 +22,7 @@ body {
     font-size: 100%;
     width: 95%;
     height: 95%;
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
     border: 5px solid steelblue;
     box-shadow: 0 0 12px grey;
@@ -245,24 +245,67 @@ footer {
 }
 
 .homesection {
-    width: 64%;
-    float: right;
+    width: 50%;
+    float: left;
     padding-right: .84em;
     padding-left: .84em;
 }
 
 .sidebar {
-    width: 35%;
+    width: 25%;
     padding-right: 1.12em;
     padding-left: 1.12em;
     padding-top: 35px;
+}
+
+#firstcol {
+    float: left;
+}
+
+#firstcol #nav_list h2 {
+    text-align: center;
+    padding-right: 20px;
+}
+
+#thirdcol {
+    float: right;
+}
+
+#thirdcol h2 {
+    text-align: center;
+    padding-right: 9px;
 }
 
 #mobilemenu {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+
+
+@media only screen and (max-width: 900px) {
+    html {
+        background-image: none;
+    }
+
+    body {
+        box-shadow: none;
+        border: none;
+        font-size: 90%;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+   
+    header h2 {
+        font-size: 200%;
+    }
+
+    header h3 {
+        font-size: 125%;
+    }
+   
     .homesection {
         float: none;
         width: 100%;
@@ -270,10 +313,54 @@ footer {
 
     .sidebar {
         width: 100%;
+        float: none;
+    }
+    
+    .thirdcol {
+        width: 100%;
+        float: none;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    #mobilemenu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: lightblue !important;
+    }
+
+    .slicknav_menu ul li a {
+        color: white; 
+        font-weight: bold;
+    }
+
+    .slicknav_menu a {
+        background-color: steelblue;
     }
 }
 
-@media only screen and (max-width: 400px) {
 
+
+@media only screen and (max-width: 479px) {
+
+    header img {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    header h2 {
+        text-align: center;
+        padding-right: 50px;
+    }
+
+    header h3 {
+        text-align: center;
+        padding-right: 40px;
+    }
 }
 
